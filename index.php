@@ -41,7 +41,7 @@ if(mail($toEmail,$subject,$body,$headers)){
 
 }else{
     //failed
-    $msg = 'please check all input field';
+    $msg = 'Please Check All Input Field';
     $msgClass = 'alert-danger';
 }
 
@@ -71,7 +71,7 @@ if(mail($toEmail,$subject,$body,$headers)){
    <div class="col-sm-4 card">
 
    <div class="card-heading">
-   <h4>Contact us</h4></div>
+   <h4 class="text-center text-primary">Contact Us</h4></div>
    <div class="card-body">
    <?php  if($msg !=''): ?>
 <div class="<?php echo $msgClass ;?>"><?php echo $msg; ?></div>
@@ -81,15 +81,15 @@ if(mail($toEmail,$subject,$body,$headers)){
   
     <div class="form-group">
     <label for="Name">Name</label>
-    <input type="name" class="form-control" placeholder="name" name="name" value="<?php 
+    <input type="name" class="form-control" placeholder="Enter Your Name" name="name" value="<?php 
     
     echo isset($_POST['name'])?$name : '';
     ?>">
 
   </div>
   <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" name="email" placeholder="Enter email" value="<?php 
+    <label for="exampleInputEmail1">E-mail</label>
+    <input type="email" class="form-control" name="email" placeholder="Enter E-mail" value="<?php 
     
     echo isset($_POST['email'])?$email : '';
     ?>">
@@ -102,11 +102,11 @@ if(mail($toEmail,$subject,$body,$headers)){
     
     echo isset($_POST['message'])?$message : '';
     ?>"
-    
+    placeholder="Type your message here "
     ></textarea>
   </div>
   
-  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" name="submit" class="btn btn-primary">SEND</button>
 </form>
    
    
