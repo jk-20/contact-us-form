@@ -1,4 +1,4 @@
 # contact-us-form
-php contact us form its woking on live server . \
-i didn't use any library like php mailer .\
+1.php contact us form its woking on live server . 
+2.without use any php (mailer Library) 
 thank you :)
